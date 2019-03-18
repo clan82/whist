@@ -84,5 +84,3 @@ $(function () {
 </tbody>
 
 </table>
-
-</pre>
