@@ -17,6 +17,7 @@ l.name AS location, (
 FROM games AS g
 LEFT OUTER JOIN locations l
 ON g.location_id = l.id
+WHERE g.test = 0
 ORDER BY g.started_at DESC
 
 EOS;

@@ -9,12 +9,6 @@ check_request_method("GET");
 $games = db_get_game_list(0, 10000);
 // Sort/filer $games
 $games = array_reverse($games);
-$filtered_games = [];
-foreach ($games as $game) {
-  if (strpos(strtolower($game['description']), "test") !== false) continue;
-  else $filtered_games[] = $game;
-}
-$games = $filtered_games;
 
 // Statistic work
 $rounds = [];
