@@ -80,7 +80,7 @@ $(function () {
       ?>
       <td><b><?php echo $sum[$id]; ?></b></td>
       <?php endforeach ?>
-  </td>
+  </tr>
 </tbody>
 
 </table>
